@@ -1,0 +1,17 @@
+[advisory]
+id = "BRSA-xuzwld7ozmvt"
+title = "grub CVE-2024-45779"
+cve = "CVE-2024-45779"
+severity = "moderate"
+description = "GRUB2 contains a flaw in its BFS file system parsing logic that permits an integer overflow, resulting in an out-of-bounds memory access that may cause data leaks or crashes."
+
+[[advisory.products]]
+package-name = "grub"
+patched-version = "2.06"
+patched-epoch = "0"
+
+[updateinfo]
+author = "jweiw"
+issue-date = 2025-06-13T23:38:35Z
+arches = ["x86_64", "aarch64"]
+version = "staging"

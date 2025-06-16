@@ -1,0 +1,17 @@
+[advisory]
+id = "BRSA-rblvr4rxdsav"
+title = "grub CVE-2025-0624"
+cve = "CVE-2025-0624"
+severity = "moderate"
+description = "A flaw in GRUB2's grub_net_search_config_file() function allows for an out-of-bounds write when copying data from a user-controlled environment variable during network boot, potentially enabling remote code execution and bypassing secure boot."
+
+[[advisory.products]]
+package-name = "grub"
+patched-version = "2.06"
+patched-epoch = "0"
+
+[updateinfo]
+author = "jweiw"
+issue-date = 2025-06-14T00:06:24Z
+arches = ["aarch64", "x86_64"]
+version = "staging"

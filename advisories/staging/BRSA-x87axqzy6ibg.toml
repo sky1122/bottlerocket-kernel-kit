@@ -1,0 +1,17 @@
+[advisory]
+id = "BRSA-x87axqzy6ibg"
+title = "grub CVE-2024-45783"
+cve = "CVE-2024-45783"
+severity = "moderate"
+description = "A flaw was found in grub2. When failing to mount an HFS+ grub, the hfsplus filesystem driver doesn't properly set an ERRNO value. This issue may lead to a NULL pointer access."
+
+[[advisory.products]]
+package-name = "grub"
+patched-version = "2.06"
+patched-epoch = "0"
+
+[updateinfo]
+author = "jweiw"
+issue-date = 2025-06-13T23:47:38Z
+arches = ["x86_64", "aarch64"]
+version = "staging"

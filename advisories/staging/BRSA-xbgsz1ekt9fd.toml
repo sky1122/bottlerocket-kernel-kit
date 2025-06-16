@@ -1,0 +1,17 @@
+[advisory]
+id = "BRSA-xbgsz1ekt9fd"
+title = "grub CVE-2024-45778"
+cve = "CVE-2024-45778"
+severity = "moderate"
+description = "A stack overflow flaw was found when reading a BFS file system. A crafted BFS filesystem may lead to an uncontrolled loop, causing grub2 to crash."
+
+[[advisory.products]]
+package-name = "grub"
+patched-version = "2.06"
+patched-epoch = "0"
+
+[updateinfo]
+author = "jweiw"
+issue-date = 2025-06-13T23:36:00Z
+arches = ["aarch64", "x86_64"]
+version = "staging"

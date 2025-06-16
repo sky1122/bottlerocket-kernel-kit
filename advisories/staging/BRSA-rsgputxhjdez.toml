@@ -1,0 +1,17 @@
+[advisory]
+id = "BRSA-rsgputxhjdez"
+title = "grub CVE-2024-45782"
+cve = "CVE-2024-45782"
+severity = "moderate"
+description = "A flaw was found in the HFS filesystem. When reading an HFS volume's name at grub_fs_mount(), the HFS filesystem driver performs a strcpy() using the user-provided volume name as input without properly validating the volume name's length, enabling potential bypasses of secure boot protections."
+
+[[advisory.products]]
+package-name = "grub"
+patched-version = "2.06"
+patched-epoch = "0"
+
+[updateinfo]
+author = "jweiw"
+issue-date = 2025-06-13T23:46:42Z
+arches = ["x86_64", "aarch64"]
+version = "staging"

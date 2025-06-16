@@ -1,0 +1,17 @@
+[advisory]
+id = "BRSA-nxm6fy1g6kkd"
+title = "grub CVE-2025-0686"
+cve = "CVE-2025-0686"
+severity = "moderate"
+description = "A flaw in the GRUB romfs module's grub_romfs_read_symlink() function's handling of symlinks allows an integer overflow that can lead to a heap-based out-of-bounds write when calling grub_disk_read(), potentially resulting in arbitrary code execution."
+
+[[advisory.products]]
+package-name = "grub"
+patched-version = "2.06"
+patched-epoch = "0"
+
+[updateinfo]
+author = "jweiw"
+issue-date = 2025-06-16T16:18:16Z
+arches = ["aarch64", "x86_64"]
+version = "staging"

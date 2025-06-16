@@ -1,0 +1,17 @@
+[advisory]
+id = "BRSA-irdy4tw47kbe"
+title = "grub CVE-2024-45775"
+cve = "CVE-2024-45775"
+severity = "moderate"
+description = "A flaw in the grub_extcmd_dispatcher() function of GRUB2 could lead to a denial of service or potential data corruption due to a missing check for failed memory allocation."
+
+[[advisory.products]]
+package-name = "grub"
+patched-version = "2.06"
+patched-epoch = "0"
+
+[updateinfo]
+author = "jweiw"
+issue-date = 2025-06-13T23:06:52Z
+arches = ["x86_64", "aarch64"]
+version = "staging"

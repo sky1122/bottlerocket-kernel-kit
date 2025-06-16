@@ -1,0 +1,17 @@
+[advisory]
+id = "BRSA-bqnwwaeuien9"
+title = "grub CVE-2025-0678"
+cve = "CVE-2025-0678"
+severity = "moderate"
+description = "A flaw in the GRUB squash4 module's direct_read() function's data reading logic allows an integer overflow that can lead to a heap-based out-of-bounds write, potentially resulting in arbitrary code execution."
+
+[[advisory.products]]
+package-name = "grub"
+patched-version = "2.06"
+patched-epoch = "0"
+
+[updateinfo]
+author = "jweiw"
+issue-date = 2025-06-16T16:10:53Z
+arches = ["x86_64", "aarch64"]
+version = "staging"

@@ -1,0 +1,17 @@
+[advisory]
+id = "BRSA-y8rumnslmnsa"
+title = "grub CVE-2025-0622"
+cve = "CVE-2025-0622"
+severity = "moderate"
+description = "A flaw was found in GRUB2 where hooks from unloaded modules are not properly removed, leading to a use-after-free vulnerability that could enable arbitrary code execution and the circumvention of secure boot."
+
+[[advisory.products]]
+package-name = "grub"
+patched-version = "2.06"
+patched-epoch = "0"
+
+[updateinfo]
+author = "jweiw"
+issue-date = 2025-06-13T23:51:52Z
+arches = ["aarch64", "x86_64"]
+version = "staging"

@@ -1,0 +1,17 @@
+[advisory]
+id = "BRSA-zyagkk23drny"
+title = "grub CVE-2025-1118"
+cve = "CVE-2025-1118"
+severity = "moderate"
+description = "A flaw in the GRUB dump command allows it to be executed even when GRUB is in lockdown mode, which could enable an attacker to extract sensitive information from memory."
+
+[[advisory.products]]
+package-name = "grub"
+patched-version = "2.06"
+patched-epoch = "0"
+
+[updateinfo]
+author = "jweiw"
+issue-date = 2025-06-16T16:21:21Z
+arches = ["x86_64", "aarch64"]
+version = "staging"

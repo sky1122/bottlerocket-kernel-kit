@@ -1,0 +1,17 @@
+[advisory]
+id = "BRSA-gaoizxbk9pvv"
+title = "grub CVE-2025-0690"
+cve = "CVE-2025-0690"
+severity = "moderate"
+description = "A flaw in the GRUB read command's handling of input length can lead to an integer overflow, resulting in an out-of-bounds write that could corrupt critical data and potentially bypass secure boot."
+
+[[advisory.products]]
+package-name = "grub"
+patched-version = "2.06"
+patched-epoch = "0"
+
+[updateinfo]
+author = "jweiw"
+issue-date = 2025-06-16T16:20:26Z
+arches = ["aarch64", "x86_64"]
+version = "staging"

@@ -1,0 +1,17 @@
+[advisory]
+id = "BRSA-kznre2fpo5dy"
+title = "grub CVE-2025-0684"
+cve = "CVE-2025-0684"
+severity = "moderate"
+description = "A flaw in the GRUB reiserfs module's grub_reiserfs_read_symlink() function's handling of symlinks allows an integer overflow that can lead to a heap-based out-of-bounds write during data reading, potentially resulting in arbitrary code execution."
+
+[[advisory.products]]
+package-name = "grub"
+patched-version = "2.06"
+patched-epoch = "0"
+
+[updateinfo]
+author = "jweiw"
+issue-date = 2025-06-16T16:12:39Z
+arches = ["x86_64", "aarch64"]
+version = "staging"

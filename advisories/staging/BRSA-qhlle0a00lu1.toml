@@ -1,0 +1,17 @@
+[advisory]
+id = "BRSA-qhlle0a00lu1"
+title = "grub CVE-2025-0685"
+cve = "CVE-2025-0685"
+severity = "moderate"
+description = "A flaw in the GRUB JFS module's grub_jfs_lookup_symlink() function's handling of symlinks allows an integer overflow that can lead to a heap-based out-of-bounds write during data reading in grub_jfs_read_file(), potentially resulting in arbitrary code execution."
+
+[[advisory.products]]
+package-name = "grub"
+patched-version = "2.06"
+patched-epoch = "0"
+
+[updateinfo]
+author = "jweiw"
+issue-date = 2025-06-16T16:13:57Z
+arches = ["x86_64", "aarch64"]
+version = "staging"

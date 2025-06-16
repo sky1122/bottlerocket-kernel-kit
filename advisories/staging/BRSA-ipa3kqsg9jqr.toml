@@ -1,0 +1,17 @@
+[advisory]
+id = "BRSA-ipa3kqsg9jqr"
+title = "grub CVE-2024-45776"
+cve = "CVE-2024-45776"
+severity = "moderate"
+description = "When reading the language .mo file in grub_mofile_open(), grub2 fails to verify an integer overflow when allocating its internal buffer. A crafted .mo file may lead the buffer size calculation to overflow, leading to out-of-bound reads and writes."
+
+[[advisory.products]]
+package-name = "grub"
+patched-version = "2.06"
+patched-epoch = "0"
+
+[updateinfo]
+author = "jweiw"
+issue-date = 2025-06-13T23:25:21Z
+arches = ["x86_64", "aarch64"]
+version = "staging"

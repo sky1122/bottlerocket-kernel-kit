@@ -1,0 +1,17 @@
+[advisory]
+id = "BRSA-61eomplftwut"
+title = "grub CVE-2025-0689"
+cve = "CVE-2025-0689"
+severity = "moderate"
+description = "A flaw in the GRUB UDF module's grub_udf_read_block() function's handling of disk reads can lead to a heap-based buffer overflow, potentially resulting in arbitrary code execution."
+
+[[advisory.products]]
+package-name = "grub"
+patched-version = "2.06"
+patched-epoch = "0"
+
+[updateinfo]
+author = "jweiw"
+issue-date = 2025-06-16T16:19:23Z
+arches = ["aarch64", "x86_64"]
+version = "staging"

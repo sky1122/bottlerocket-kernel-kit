@@ -1,0 +1,17 @@
+[advisory]
+id = "BRSA-0an6ctj2omby"
+title = "grub CVE-2024-45774"
+cve = "CVE-2024-45774"
+severity = "moderate"
+description = "The JPEG parser in GRUB2 is vulnerable to an out-of-bounds write when processing malformed JPEG data, enabling potential bypasses of secure boot protections."
+
+[[advisory.products]]
+package-name = "grub"
+patched-version = "2.06"
+patched-epoch = "0"
+
+[updateinfo]
+author = "jweiw"
+issue-date = 2025-06-13T22:18:07Z
+arches = ["aarch64", "x86_64"]
+version = "staging"

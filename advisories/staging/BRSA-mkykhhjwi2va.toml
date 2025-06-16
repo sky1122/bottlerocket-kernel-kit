@@ -1,0 +1,17 @@
+[advisory]
+id = "BRSA-mkykhhjwi2va"
+title = "grub CVE-2025-0677"
+cve = "CVE-2025-0677"
+severity = "moderate"
+description = "A flaw in the grub_ufs_lookup_symlink() function's handling of symlinks could lead to a heap-based out-of-bounds write, potentially resulting in arbitrary code execution."
+
+[[advisory.products]]
+package-name = "grub"
+patched-version = "2.06"
+patched-epoch = "0"
+
+[updateinfo]
+author = "jweiw"
+issue-date = 2025-06-16T16:06:51Z
+arches = ["aarch64", "x86_64"]
+version = "staging"
