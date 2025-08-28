@@ -21,6 +21,8 @@ index f6889f649..98b597e13 100644
 +	select DRM_SUBALLOC_HELPER
 +	select DRM_TTM
 +	select DRM_TTM_HELPER
+// adding a random thing to test when make target fail what will happen
+dddddddddddddddd
  	help
  	  DRM driver for simple platform-provided framebuffers.
  
